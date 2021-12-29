@@ -1,14 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/head.html',{
-    "title": "Home"
-})
-<body>
+  @@include('html/head.html',{ "title": "Home" })
+  <body>
     @@include('html/header.html')
-    <main>
-        
+    <main class="main">
+      <section class="hero-section">
+        <div class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__slide">
+              <img src="@img/slide.png" alt="" />
+            </div>
+            <div class="slider__slide">
+              <img src="@img/slide.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="title">OUR BRAND</h2>
+        <div class="brand__container">
+          <div class="brand__flex">
+            <div class="brand__item">
+              <a href="">
+                <div class="brand__img">
+                  <img src="@img/armonia.png" alt="" />
+                </div>
+                <div class="brand__info">
+                  <h3>Armonia</h3>
+                </div>
+              </a>
+            </div>
+            <div class="brand__item">
+              <a href="">
+                <div class="brand__img">
+                  <img src="@img/lanesta.png" alt="" />
+                </div>
+                <div class="brand__info">
+                  <h3>Lanesta</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="blog__prewiev">
+          <div class="blog__prewiev-flex">
+            <a class="blog__prewiev-item" href="">
+              <div class="blog__prewiev-img">
+                <img src="@img/blog1.png" alt="" />
+              </div>
+              <div class="blog__prewiev-info">
+                <p class="date">22.12.2017</p>
+                <h2>История возникновения фаты</h2>
+                <p>История появления фаты уходит корнями к временам брачных церемоний древних римлян. Невеста, чистая, как ангел, считалась наиболее уязвимой для всевозможных злодеяний и порчи...</p>
+              </div>
+            </a>
+            <a class="blog__prewiev-item" href="">
+                <div class="blog__prewiev-img">
+                  <img src="@img/blog2.png" alt="" />
+                </div>
+                <div class="blog__prewiev-info">
+                  <p class="date">22.12.2017</p>
+                  <h2>История возникновения фаты</h2>
+                  <p>История появления фаты уходит корнями к временам брачных церемоний древних римлян. Невеста, чистая, как ангел, считалась наиболее уязвимой для всевозможных злодеяний и порчи...</p>
+                </div>
+              </div>
+            </a>
+        </div>
+      </section>
+      <section>
+          <h2 class="title">HOw we can halp you?</h2>
+          <div class="btn__flex">
+              <button class="btn">sign up for fitting</button>
+              <button class="btn btn-balck">get advice</button>
+          </div>
+      </section>
     </main>
     @@include('html/footer.html')
     <script src="js/main.min.js"></script>
-</body>
+  </body>
 </html>
